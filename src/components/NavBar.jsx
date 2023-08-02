@@ -1,16 +1,22 @@
-import React, { Fragment} from 'react'
+import React, { useState, Fragment} from 'react'
 import {HiSearch} from "react-icons/hi";
 import {Routes, Route, NavLink} from "react-router-dom"
-import Movies from "./Movies"
-import TvShows from "./TvShows"
-import Pricing from "./Pricing"
-import Trending from "./Trends"
 import "../Styles/NavBarStyle.css";
+import {Movies, TvShows, Trending, Pricing} from './index';
 
 
 
-function NavBar({toggle, setToggle}) {
-    // console.log(toggle);
+function NavBar() {
+  const [toggle, setToggle] = useState(true);
+  const [inputValue, setInputValue] = useState('');
+
+  function toggleHandler(){
+    setToggle(prev => !prev);
+  }
+
+  function inputHandler(e){
+    setInputValue(e.target.value);
+  }  
 
 return (
 
@@ -32,18 +38,18 @@ return (
                 </NavLink>
             </div>
             <div className="input-group">
-                <input type="text" placeholder="Search Whatever You Want"/>
+                <input type="text" placeholder="Search Whatever You Want" onChange={inputHandler}/>
                 <HiSearch  fontSize={21} color="black" id="search"/>
-                <div id="Color-switcher" onClick={setToggle}>
+                <div id="Color-switcher" onClick={toggleHandler}>
                    <div id={toggle ? "Color-switcher-mover" : "Color-switcher-moved"}></div>
                 </div>
             </div>
         </nav>
         <Routes>
-          <Route path="Movies" element={<Movies />}/>
-          <Route path="TvShows" element={<TvShows />}/>
-          <Route path="Trending" element={<Trending />}/>
-          <Route path="Pricing" element={<Pricing />}/>
+          <Route path="/" element={<Movies toggle={toggle} inputValue={inputValue} />}/>
+          <Route path="/tvshows" element={<TvShows toggle={toggle} inputValue={inputValue}/>}/>
+          <Route path="/trending" element={<Trending />}/>
+          <Route path="/pricing" element={<Pricing />}/>
         </Routes>
     </Fragment>
 
