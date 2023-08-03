@@ -4,6 +4,8 @@ import {AiFillPlayCircle} from 'react-icons/ai'
 import {AiOutlineClose} from 'react-icons/ai'
 import  '../Styles/Videos.css';
 import NoImg from './no-image-icon.png';
+import TrailerMovies from '../Trailers/TrailerMovies';
+
 
 
 function Movies({toggle, inputValue}) {
@@ -12,7 +14,7 @@ function Movies({toggle, inputValue}) {
   const Shown  = inputValue ? 'search' : 'discover';
   const Api = `https://api.themoviedb.org/3/${Shown}/movie`
   const Images = 'https://image.tmdb.org/t/p/w500'
-  const [movieTitle, setMovieTitle] = useState('')
+  const [moviesTitle, setMovieTitle] = useState('')
 
   const MovieCall = async () => {
     const data = await axios.get(Api,{
@@ -51,6 +53,7 @@ function Movies({toggle, inputValue}) {
         </Fragment>
         )
       })}
+      {trailer ? console.log : <TrailerMovies moviesTitle={moviesTitle} toggle={toggle}/> }
       <AiOutlineClose id={trailer ? 'Nothing' : 'Exit1'} className={toggle ? 'DarkTheme' : 'LightThemeClose'} fontSize={55} color="#fff" cursor="pointer" onClick={() => setTrailer(true)}/>
       </div>
       </div>

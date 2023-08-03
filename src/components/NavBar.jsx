@@ -48,7 +48,7 @@ return (
         <Routes>
           <Route path="/" element={<Movies toggle={toggle} inputValue={inputValue} />}/>
           <Route path="/tvshows" element={<TvShows toggle={toggle} inputValue={inputValue}/>}/>
-          <Route path="/trending" element={<Trending />}/>
+          <Route path="/trending" element={<Trending toggle={toggle}/>}/>
           <Route path="/pricing" element={<Pricing />}/>
         </Routes>
     </Fragment>
