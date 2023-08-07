@@ -20,14 +20,14 @@ nav span{
 }
 nav span:hover{
     color: #fff;
-    border-bottom: 2px solid #06cee9;
+    border-bottom: 2px solid rgb(11 226 255);;
     padding-bottom: 5px;
 }
 span #HomeLight, #MoviesLight, #TrendingLight, #PricingLight{
     color: #fff;
 }
 span #HomeLight:hover, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:hover{
-    border-bottom: 2px solid #06cee9;
+    border-bottom: 2px solid rgb(11 226 255);;
 }
 #navBarColor{
     background-color: #38bdab;
@@ -38,10 +38,10 @@ span #HomeLight:hover, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:h
     align-items: center;
 }
 #heading{
-    color: #06cee9;
+    color: rgb(11 226 255);;
 }
 #navBarColor span:hover{
-    border-bottom: 2px solid #06cee9;
+    border-bottom: 2px solid rgb(11 226 255);;
     padding-bottom: 5px;
 }
 .input-group{

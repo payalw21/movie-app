@@ -5,8 +5,8 @@
 }
 
 .Container{
-    display:none;
-    position:absolute;
+    display:absolute;
+    position:relative;
     z-index:100;
 }
 

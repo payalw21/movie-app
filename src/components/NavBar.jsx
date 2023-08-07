@@ -23,7 +23,7 @@ return (
     <Fragment>
         <nav className={toggle ? "" : "navBarColor"}>
             <div className="nav-options">
-                <h1 id={toggle ? "" : "heading"}>REACTFLIX</h1>
+                <h1 id= "heading">REACTFLIX</h1>
                 <NavLink to="" style={({isActive}) => {return {color: isActive ? '#fff' : '#06cee9'}}}>
                     <span id={toggle ? "Movies" : "MoviesLight"}>Movies</span>
                 </NavLink>
@@ -49,7 +49,7 @@ return (
           <Route path="/" element={<Movies toggle={toggle} inputValue={inputValue} />}/>
           <Route path="/tvshows" element={<TvShows toggle={toggle} inputValue={inputValue}/>}/>
           <Route path="/trending" element={<Trending toggle={toggle}/>}/>
-          <Route path="/pricing" element={<Pricing />}/>
+          <Route path="/pricing" element={<Pricing toggle={toggle}/>}/>
         </Routes>
     </Fragment>
 
