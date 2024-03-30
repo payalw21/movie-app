@@ -16,6 +16,7 @@ function TrailerMovies({ moviesTitle, toggle }) {
   useEffect(() => {
     handleSearch();
   }, [videoURL]);
+
   return (
     <Fragment>
       <div className="Container"></div>
