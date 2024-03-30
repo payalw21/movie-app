@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import movieTrailer from "movie-trailer";
-import "../Styles/TrailerMovie.css";
+import "../styles/TrailerMovie.css";
 
 function TrailerMovies({ moviesTitle, toggle }) {
   const [video, setVideo] = useState("inception");

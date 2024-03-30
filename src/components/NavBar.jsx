@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { HiSearch } from "react-icons/hi";
 import { Routes, Route, NavLink } from "react-router-dom";
-import "../Styles/NavBarStyle.css";
+import "../styles/NavBarStyle.css";
 import { Movies, TvShows, Trending, Pricing } from "./index";
 
 function NavBar() {
