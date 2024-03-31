@@ -27,6 +27,7 @@ function Trends({ toggle }) {
     setTimeout(() => {
       Trends();
     }, 100);
+        // eslint-disable-next-line
   }, []);
 
   const TrendTitle = (trend) => {

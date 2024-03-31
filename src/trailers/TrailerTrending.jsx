@@ -3,11 +3,11 @@ import ReactPlayer from "react-player";
 import movieTrailer from "movie-trailer";
 import "../styles/TrailerMovie.css";
 
-function TrailerTvShows({ TvShowsTitle, toggle }) {
+function TrailerTrending({ trendTitle, toggle }) {
   const [video, setVideo] = useState("inception");
   const [videoURL, setVideoURL] = useState("https://youtu.be/sa9l-dTv9Gk");
   function handleSearch() {
-    setVideo(TvShowsTitle);
+    setVideo(trendTitle);
     movieTrailer(video).then((res) => {
       setVideoURL(res);
     });
@@ -15,13 +15,14 @@ function TrailerTvShows({ TvShowsTitle, toggle }) {
 
   useEffect(() => {
     handleSearch();
+    // eslint-disable-next-line
   }, [videoURL]);
   return (
     <Fragment>
       <div className="Container"></div>
       <div className="player">
         <h1 id={toggle ? "TrailerMovie-name-dark" : "TrailerMovie-name-light"}>
-          {TvShowsTitle}
+          {trendTitle}
         </h1>
         <ReactPlayer
           url={videoURL}
@@ -35,4 +36,4 @@ function TrailerTvShows({ TvShowsTitle, toggle }) {
   );
 }
 
-export default TrailerTvShows;
+export default TrailerTrending;

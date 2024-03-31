@@ -15,6 +15,7 @@ function TrailerMovies({ moviesTitle, toggle }) {
 
   useEffect(() => {
     handleSearch();
+        // eslint-disable-next-line
   }, [videoURL]);
 
   return (
