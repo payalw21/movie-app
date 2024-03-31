@@ -29,7 +29,8 @@ function Movies({ toggle, inputValue }) {
     setTimeout(() => {
       MovieCall();
     }, 100);
-  }, [inputValue,MovieCall]);
+        // eslint-disable-next-line
+  }, [inputValue]);
 
   const MovieTitle = (movie) => {
     setMovieTitle(movie.title);

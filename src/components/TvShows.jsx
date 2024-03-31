@@ -28,7 +28,8 @@ function TvShows({ toggle, inputValue }) {
     setTimeout(() => {
       TvShows();
     }, 100);
-  }, [inputValue,TvShows]);
+        // eslint-disable-next-line
+  }, [inputValue]);
 
   const TvShowTitle = (shows) => {
     setTvShowsTitle(shows.name);
