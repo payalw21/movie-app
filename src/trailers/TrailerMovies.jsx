@@ -15,7 +15,7 @@ function TrailerMovies({ moviesTitle, toggle }) {
 
   useEffect(() => {
     handleSearch();
-  }, [videoURL]);
+  }, [videoURL,handleSearch]);
 
   return (
     <Fragment>

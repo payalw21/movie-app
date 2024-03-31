@@ -28,7 +28,7 @@ function TvShows({ toggle, inputValue }) {
     setTimeout(() => {
       TvShows();
     }, 100);
-  }, [inputValue]);
+  }, [inputValue,TvShows]);
 
   const TvShowTitle = (shows) => {
     setTvShowsTitle(shows.name);

@@ -29,7 +29,7 @@ function Movies({ toggle, inputValue }) {
     setTimeout(() => {
       MovieCall();
     }, 100);
-  }, [inputValue]);
+  }, [inputValue,MovieCall]);
 
   const MovieTitle = (movie) => {
     setMovieTitle(movie.title);

@@ -27,7 +27,7 @@ function Trends({ toggle }) {
     setTimeout(() => {
       Trends();
     }, 100);
-  }, []);
+  }, [Trends]);
 
   const TrendTitle = (trend) => {
     setTrendTitle(trend.title);

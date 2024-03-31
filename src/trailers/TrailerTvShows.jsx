@@ -15,7 +15,7 @@ function TrailerTvShows({ TvShowsTitle, toggle }) {
 
   useEffect(() => {
     handleSearch();
-  }, [videoURL]);
+  }, [videoURL,handleSearch]);
   return (
     <Fragment>
       <div className="Container"></div>
