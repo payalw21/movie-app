@@ -28,19 +28,27 @@
 .Pricing-option2,
 .Pricing-option3 {
   width: 30vw;
-  height: 63vh;
+  height: 90vh;
   background-color: #000d13;
   margin-right: 20px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .light-Theme1,
 .light-Theme2,
 .light-Theme3 {
   width: 30vw;
-  height: 63vh;
+  height: 90vh;
   background-color: #29534e;
   margin-right: 20px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Pricing-option1 h3,
 .Pricing-option2 h3,
@@ -109,27 +117,21 @@
 button {
   width: 80%;
   height: 6vh;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   border: none;
   border-radius: 7px;
   background-color: #659664;
   color: #fff;
   font-size: 1.3rem;
   cursor: pointer;
+  margin-bottom: 28px;
+  margin-top: 10px;
 }
 button:hover {
   background-color: #588157;
   transition: 0.4s;
 }
-#button1 {
-  margin-top: 98px;
-}
-#button2 {
-  margin-top: 55px;
-}
-#button3 {
-  margin-top: 12px;
-}
+
 #darktheme {
   display: flex;
   justify-content: flex-end;
@@ -137,19 +139,21 @@ button:hover {
 .Pricing-yearly-darktheme {
   position: relative;
   margin-left: 250px;
-  width: 70px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   border-radius: 20px;
   background-color: #413e44;
   margin-right: 10px;
+  top: 31px;
+  right: 24px;
 }
 .Pricing-monthly-darktheme {
   position: relative;
   left: 5px;
   top: 4px;
   background-color: #fff;
-  width: 33px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   transition: 0.6s;
 }

@@ -25,24 +25,27 @@ function Pricing({ toggle }) {
               <h3>{basicCost}$</h3>
               <h4 id="MonthlyYearly">{toggleBasic ? "/Monthly" : "/Yearly"}</h4>
             </div>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Ultimated films and tv programmes
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Watch on mobile phones and tablets
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Cancel at anytime
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              First month completely free
-            </span>
-            <button id="button1">Buy Now</button>
-            <div id="darktheme">
+            <div preminum-features>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Ultimated films and tv programmes
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Watch on mobile phones and tablets
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Cancel at anytime
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                First month completely free
+              </span>
+            </div>
+
+            <button class="btn">Buy Now</button>
+            {/* <div id="darktheme">
               <div
                 className="Pricing-yearly-darktheme"
                 onClick={() => {
@@ -62,10 +65,10 @@ function Pricing({ toggle }) {
                   }
                 ></div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className={toggle ? "Pricing-option2" : "light-Theme2"}>
+          <div className={toggle ? "Pricing-option1" : "light-Theme1"}>
             <h2>Standard</h2>
             <div className="Price">
               <h3>{standardCost}$</h3>
@@ -73,28 +76,31 @@ function Pricing({ toggle }) {
                 {toggleStandard ? "/Monthly" : "/Yearly"}
               </h4>
             </div>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Ultimated films and tv programmes
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Watch on mobile phones and tablets
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Cancel at anytime
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              First month completely free
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              HD available
-            </span>
-            <button id="button2">Buy Now</button>
-            <div id="darktheme">
+            <div preminum-features>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Ultimated films and tv programmes
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Watch on mobile phones and tablets
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Cancel at anytime
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                First month completely free
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                HD available
+              </span>
+            </div>
+
+            <button className="btn">Buy Now</button>
+            {/* <div id="darktheme">
               <div
                 className="Pricing-yearly-darktheme"
                 onClick={() => {
@@ -114,42 +120,10 @@ function Pricing({ toggle }) {
                   }
                 ></div>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className={toggle ? "Pricing-option3" : "light-Theme3"}>
-            <h2>Premium</h2>
-            <div className="Price">
-              <h3>{premiumCost}$</h3>
-              <h4 id="MonthlyYearly">
-                {togglePremium ? "/Monthly" : "/Yearly"}
-              </h4>
-            </div>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Ultimated films and tv programmes
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Watch on mobile phones and tablets
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Cancel at anytime
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              First month completely free
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              HD available
-            </span>
-            <span>
-              <FcCheckmark fontSize={25} id="checkmark" />
-              Ultra HD
-            </span>
-            <button id="button3">Buy Now</button>
+          <div className={toggle ? "Pricing-option1" : "light-Theme1"}>
             <div id="darktheme">
               <div
                 className="Pricing-yearly-darktheme"
@@ -171,6 +145,41 @@ function Pricing({ toggle }) {
                 ></div>
               </div>
             </div>
+            <h2>Premium</h2>
+            <div className="Price">
+              <h3>{premiumCost}$</h3>
+              <h4 id="MonthlyYearly">
+                {togglePremium ? "/Monthly" : "/Yearly"}
+              </h4>
+            </div>
+            <div className="preminum-features">
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Ultimated films and tv programmes
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Watch on mobile phones and tablets
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Cancel at anytime
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                First month completely free
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                HD available
+              </span>
+              <span>
+                <FcCheckmark fontSize={25} id="checkmark" />
+                Ultra HD
+              </span>
+            </div>
+
+            <button className="btn">Buy Now</button>
           </div>
         </div>
       </div>
